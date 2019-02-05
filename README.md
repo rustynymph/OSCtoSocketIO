@@ -5,7 +5,7 @@
 [/public/sketch.js](/public/sketch.js)  Example of P5.js sketch page getting OSC message over web socket  
 [/public/sketch.html](/public/sketch.html)  Setup for P5.js sketch page  
   
-From main directory run `node .`
+From main directory run `npm install` and then `node .` to run your app  
 To access index.html page visit `localhost:4243` in browser  
 To access P5.js sketch example visit `localhost:4243/public/sketch.html` in browser  
 
