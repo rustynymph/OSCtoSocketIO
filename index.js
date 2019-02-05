@@ -1,4 +1,4 @@
-var OSC_RECIEVE_PORT = 6448 // port listening receives OSC msgs on
+var OSC_RECIEVE_PORT = 8888 // port listening receives OSC msgs on
 var WS_PORT = 4243          // port listening to web sockte connections from clients on
 
 var osc = require('node-osc');

@@ -16,4 +16,4 @@ app.get('/', function(req, res){
 });
 ```  
 
-To send OSC messages to this app find the IP address of your computer (if running the project locally) and send messages to that IP address on port 6448. You can use a lot of applications to generate OSC messages and send them, [TouchOSC](https://hexler.net/software/touchosc) is a great option if you need some UI controls.
+To send OSC messages to this app find the IP address of your computer (if running the project locally) and send messages to that IP address on port 8888. You can use a lot of applications to generate OSC messages and send them, [TouchOSC](https://hexler.net/software/touchosc) is a great option if you need some UI controls.
