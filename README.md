@@ -14,4 +14,6 @@ If you want a different page other than index.html to be served up as the main p
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
-```
+```  
+
+To send OSC messages to this app find the IP address of your computer (if running the project locally) and send messages to that IP address on port 6448. You can use a lot of applications to generate OSC messages and send them, [https://hexler.net/software/touchosc](TouchOSC) is a great option if you need some UI controls.
