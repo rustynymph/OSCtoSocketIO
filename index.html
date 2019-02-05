@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <!--Example of using data from OSC messages in an html page-->
+  <head>
+    <title>Hello world</title>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ff00e2;
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+      var socket = io();
+      // Runs when the server receives an OSC message & sends it over websocket.
+      // Do something with it
+      socket.on('osc', function(msg){ 
+        console.log("OSC message received: " + msg["address"] + " " + msg["payload"]);
+        // access the data from the OSC message using msg["address"] and msg["payload"]
+      });
+  </script>
+  <body>OSC to web socket example</body>
+</html>
